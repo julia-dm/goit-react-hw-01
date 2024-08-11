@@ -1,18 +1,17 @@
 import React from 'react';
-import clsx from 'clsx';
+import FriendListItem from './FriendListItem';
 import styles from './FriendList.module.css';
 
 const FriendList = ({ friends }) => {
   return (
     <ul className={styles.friendList}>
-      {friends.map(({ avatar, name, isOnline, id }) => (
-        <li key={id} className={styles.friendItem}>
-          <img className={styles.avatar} src={avatar} alt={name} />
-          <p className={styles.name}>{name}</p>
-          <p className={clsx(styles.statusText, isOnline ? styles.online : styles.offline)}>
-  {isOnline ? 'Online' : 'Offline'}
-</p>
-
+      {friends.map(friend => (
+        <li key={friend.id} className={styles.friendItem}>
+          <FriendListItem
+            avatar={friend.avatar}
+            name={friend.name}
+            isOnline={friend.isOnline}
+          />
         </li>
       ))}
     </ul>

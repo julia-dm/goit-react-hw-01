@@ -14,22 +14,3 @@
     background-color: white;
     padding: 10px;
 }
-.avatar {
-    width: 100px;
-}
-
-.name {
-    color: #000;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-
-
-.online {
-    color: green;
-}
-
-.offline {
-    color: red;
-}
