@@ -1,0 +1,35 @@
+.friendList {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center; 
+    gap: 10px;
+   
+}
+.friendItem{
+     border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 3px 14px 2px rgba(0, 0, 0, 0.41);
+    background-color: white;
+    padding: 10px;
+}
+.avatar {
+    width: 100px;
+}
+
+.name {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+.online {
+    color: green;
+}
+
+.offline {
+    color: red;
+}
